@@ -1,0 +1,9 @@
+{% extends "short/base.html" %} {% block content %}
+
+<div class="container m-5 content-section">
+  <h1>Link Detail</h1>
+  <p>Short URL: <a href="https://huff.pw/{{ object.short_url }}" target="_blank">https://huff.pw/{{ object.short_url }}</a></p>
+  <p>Original URL: <a href="{{ object.long_url }}">{{ object.long_url }}</a></p>
+</div>
+
+{% endblock content %}
